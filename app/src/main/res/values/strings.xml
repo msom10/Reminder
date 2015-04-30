@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Reminder</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list_reminder_item">list_reminder_item</string>
+    <string name="title_activity_add_reminder">Add Reminder</string>
+    <string name="title_activity_reminder_detail">Reminder Detail</string>
+</resources>
