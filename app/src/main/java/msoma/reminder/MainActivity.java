@@ -4,18 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class MainActivity extends Activity {
@@ -38,8 +35,6 @@ public class MainActivity extends Activity {
         // Create our adapter and associate ArrayList
         remiderListArray = new ArrayList<Reminder>();
         ReminderAdapter adapter = new ReminderAdapter(this, remiderListArray);
-
-
 
         // Associate adapter with ListView
         reminderListView.setAdapter(adapter);
@@ -70,7 +65,6 @@ public class MainActivity extends Activity {
             }
         });
 
-
     }
 
     private void updateRemiderCount() {
@@ -85,8 +79,6 @@ public class MainActivity extends Activity {
             reminderCountText.setText("Total Reminders: " + totalReminder);
         }
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -119,7 +111,6 @@ public class MainActivity extends Activity {
                 Reminder m = data.getParcelableExtra("addReminder");
 
                 Log.d(m.getDesc(),m.getTittle()+" "+m.getDueDate()+" "+m.isReminderStatus());
-
 
                 remiderListArray.add(m);
 

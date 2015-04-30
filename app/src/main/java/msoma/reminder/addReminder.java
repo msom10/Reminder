@@ -20,12 +20,9 @@ import java.util.Date;
 public class addReminder extends Activity {
 
     private DatePicker dueDate;
-
     private int year;
     private int month;
     private int day;
-
-    //static final int DATE_DIALOG_ID = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +46,7 @@ public class addReminder extends Activity {
 
     }
 
-
-        @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_add_reminder, menu);
@@ -112,7 +108,5 @@ public class addReminder extends Activity {
         //setContentView(R.layout.activity_main);
         setResult(RESULT_OK, i);
         finish();
-
     }
-
 }
